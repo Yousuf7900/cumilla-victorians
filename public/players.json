@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "player_name": "Glenn Maxwell",
+    "player_img": "https://i.ibb.co/yF4pDXry/maxwell.jpg",
+    "player_country": "Australia",
+    "player_position": "All-Rounder",
+    "player_price": 135000,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm offbreak"
+  },
+  {
+    "id": 2,
+    "player_name": "Shaheen Afridi",
+    "player_img": "https://i.ibb.co/3yN1Wp1h/shaheen.webp",
+    "player_country": "Pakistan",
+    "player_position": "Bowler",
+    "player_price": 120000,
+    "batting_style": "Left-hand bat",
+    "bowling_style": "Left-arm fast"
+  },
+  {
+    "id": 3,
+    "player_name": "Ben Stokes",
+    "player_img": "https://i.ibb.co/VWPmdDMp/ben.webp",
+    "player_country": "England",
+    "player_position": "All-Rounder",
+    "player_price": 138000,
+    "batting_style": "Left-hand bat",
+    "bowling_style": "Right-arm fast-medium"
+  },
+  {
+    "id": 4,
+    "player_name": "Kane Williamson",
+    "player_img": "https://i.ibb.co/r2GrC79R/kane.webp",
+    "player_country": "New Zealand",
+    "player_position": "Batsman",
+    "player_price": 130000,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm offbreak"
+  },
+  {
+    "id": 5,
+    "player_name": "David Warner",
+    "player_img": "https://i.ibb.co/DfdC21nS/david-warner.webp",
+    "player_country": "Australia",
+    "player_position": "Batsman",
+    "player_price": 142000,
+    "batting_style": "Left-hand bat",
+    "bowling_style": "Right-arm legbreak"
+  },
+  {
+    "id": 6,
+    "player_name": "Shakib Al Hasan",
+    "player_img": "https://i.ibb.co/NgC3tp8s/sakib-al-hasan.jpg",
+    "player_country": "Bangladesh",
+    "player_position": "All-Rounder",
+    "player_price": 150000,
+    "batting_style": "Left-hand bat",
+    "bowling_style": "Slow left-arm orthodox"
+  },
+  {
+    "id": 7,
+    "player_name": "Babar Azam",
+    "player_img": "https://i.ibb.co/Cs2W8m8Y/BABAR-AZAM-COVER.webp",
+    "player_country": "Pakistan",
+    "player_position": "Batsman",
+    "player_price": 125000,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm offbreak"
+  },
+  {
+    "id": 8,
+    "player_name": "Rashid Khan",
+    "player_img": "https://i.ibb.co/j2NqX9s/rashid-khan.webp",
+    "player_country": "Afghanistan",
+    "player_position": "Bowler",
+    "player_price": 140000,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm legbreak googly"
+  },
+  {
+    "id": 9,
+    "player_name": "Trent Boult",
+    "player_img": "https://i.ibb.co/4gnFvr26/trent-boult.webp",
+    "player_country": "New Zealand",
+    "player_position": "Bowler",
+    "player_price": 127000,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Left-arm fast-medium"
+  },
+  {
+    "id": 10,
+    "player_name": "Chris Woakes",
+    "player_img": "https://i.ibb.co/ccrBQHTB/chris-woakes.jpg",
+    "player_country": "England",
+    "player_position": "All-Rounder",
+    "player_price": 132000,
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm fast-medium"
+  }
+]
