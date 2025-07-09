@@ -1,18 +1,19 @@
+import { MdDeleteForever } from "react-icons/md";
 import React from 'react';
 
 const SelectedPlayer = ({player}) => {
     const {player_img, player_name, player_position} = player;
     return (
         <div>
-            <div className='flex justify-between border mt-5 p-3 rounded-2xl'>
+            <div className='flex justify-between border border-gray-300 mt-5 p-6 rounded-2xl'>
                 <div className='flex items-center gap-5'>
-                    <img className='max-w-20 max-h-20 rounded-2xl' src={player_img} alt="" />
+                    <img className='w-20 h-20 object-cover rounded-2xl' src={player_img} alt="" />
                     <div>
-                        <h2>{player_name}</h2>
-                        <p>{player_position}</p>
+                        <h2 className="text-2xl font-semibold text-gray-800">{player_name}</h2>
+                        <p className="text-gray-600">{player_position}</p>
                     </div>
                 </div>
-                <button>Delete</button>
+                <button><a onClick={(e) => e.preventDefault()} href="#"><MdDeleteForever className="text-red-300 hover:text-red-500 text-3xl" /></a></button>
             </div>
         </div>
     );
