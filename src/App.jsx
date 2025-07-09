@@ -35,13 +35,19 @@ function App() {
 
         ></Players>
         
-        {/* Newsletter */}
-        <Newsletter></Newsletter>
+        {/* Newsletter section */}
+
+        <Newsletter
+
+        ></Newsletter>
+
       </div>
+
+      {/* Footer section */}
       <footer>
-        {/* Footer section */}
         <Footer></Footer>
       </footer>
+
     </>
   )
 }

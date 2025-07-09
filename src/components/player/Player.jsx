@@ -44,7 +44,7 @@ const Player = ({player}) => {
                         <p className="text-gray-400">Price:</p>
                         <p className="font-semibold text-gray-600 italic">${player_price}</p>
                     </div>
-                    <button className="border-1 border-neutral-100 bg-neutral-100 px-2 py-1.5 rounded-lg"><a href="#">Choose Player</a></button>
+                    <button className="border-1 border-neutral-100 bg-neutral-100 px-2 py-1.5 rounded-lg"><a onClick={(e) => e.preventDefault()} href="#">Choose Player</a></button>
                 </div>
             </div>
         </div>

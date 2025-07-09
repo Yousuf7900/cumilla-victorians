@@ -15,17 +15,17 @@ const Footer = () => {
                     <div>
                         <h2 className='font-semibold text-lg pb-4'>Quick Links</h2>
                         <ul className='text-gray-400 list-disc space-y-2'>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a onClick={(e) => e.preventDefault()} href="#">Home</a></li>
+                            <li><a onClick={(e) => e.preventDefault()} href="#">Services</a></li>
+                            <li><a onClick={(e) => e.preventDefault()} href="#">About</a></li>
+                            <li><a onClick={(e) => e.preventDefault()} href="#">Contact</a></li>
                         </ul>
                     </div>
                     <div className='space-y-3'>
                         <h2 className='font-semibold text-lg pb-4'>Subscribe</h2>
                         <p className='text-gray-400'>Subscribe to our newsletter for the <br /> latest updates.</p>
                         <input className="rounded-l-xl px-4 py-3 border-1 border-gray-400 bg-white text-black placeholder:text-gray-300" type="text" placeholder='Enter your email' />
-                        <button className="font-bold border-1 rounded-r-xl px-4 py-3 border-gray-400 bg-gradient-to-r from-fuchsia-600 to-purple-600"><a href="#">Subscribe</a></button>
+                        <button className="font-bold border-1 rounded-r-xl px-4 py-3 border-gray-400 bg-gradient-to-r from-fuchsia-600 to-purple-600"><a onClick={(e) => e.preventDefault()} href="#">Subscribe</a></button>
                     </div>
                 </div>
             </div>
