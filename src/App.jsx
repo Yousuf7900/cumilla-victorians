@@ -25,8 +25,7 @@ function App() {
       // toast.warn('Insufficient coin, Please claim free credit', { position: "top-center" });
     }
     else{
-      setCoins(Coins - players.player_price)
-      // (Coins - players.player_price < 0) ? toast.success('Goribs', { position: "top-center" }) : 
+      setCoins(Coins - players.player_price);
     }
   }
 
