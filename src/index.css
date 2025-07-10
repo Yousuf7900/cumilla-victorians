@@ -10,3 +10,40 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
+
+/* Soft base toast */
+.soft-toast {
+  background-color: #f9fbe7;
+  color: #333  ;        
+  font-weight: 600  ;
+  border-radius: 10px  ;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1)  ;
+  font-family: "Sora", sans-serif;
+  padding: 12px 18px  ;
+}
+
+/* Success toast — soft green */
+.Toastify__toast--success.soft-toast {
+  background-color: #fefefe  ; 
+  color: #33691e  ;           
+  border: 1.5px solid #c5e1a5  ;
+}
+
+
+.Toastify__toast--error.soft-toast {
+  background-color: #ffffff  ; 
+  color: #b71c1c ;
+  border: 1.5px solid #ef9a9a  ;
+}
+
+
+.Toastify__toast--info.soft-toast {
+  background-color: #ffffff  ; 
+  color: #0d47a1  ;            
+  border: 1.5px solid #90caf9  ;
+}
+
+/* Body padding */
+.soft-toast-body {
+  padding: 0;
+}

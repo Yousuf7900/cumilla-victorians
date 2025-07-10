@@ -5,7 +5,7 @@ import Navbar from './components/navbar/Navbar'
 import Players from './components/players/Players';
 import Footer from './components/footer/Footer';
 import Newsletter from './components/newsletter/Newsletter';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
@@ -17,15 +17,16 @@ function App() {
 
   const handleFreeCredit = () => {
     setCoins(Coins + 200000);
-    toast.success('Free credit added!', { position: "top-center" });
+    toast.success('Free credit claimed!', { position: "top-center" });
   }
 
   const handleCoinBalance = (players) => {
     if(Coins <= 0){
-      toast.success('Insufficient coin, Please claim free credit', { position: "top-center" });
+      // toast.warn('Insufficient coin, Please claim free credit', { position: "top-center" });
     }
     else{
-      (Coins - players.player_price < 0) ? toast.success('Vai tk nai to', { position: "top-center" }) : setCoins(Coins - players.player_price)
+      setCoins(Coins - players.player_price)
+      // (Coins - players.player_price < 0) ? toast.success('Goribs', { position: "top-center" }) : 
     }
   }
 
@@ -52,7 +53,21 @@ function App() {
       <footer>
         <Footer></Footer>
       </footer>
-      <ToastContainer />
+      {/* <ToastContainer /> */}
+      <ToastContainer
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Slide}
+        toastClassName="soft-toast"
+        bodyClassName="soft-toast-body"
+      />
     </>
     
   )

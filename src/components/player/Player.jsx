@@ -6,9 +6,6 @@ const Player = ({player, selectPlayers, handleChoosePlayer, handleCoinBalance, C
     const alreadySelected = selectPlayers.find(selected => selected.id === id);
     const maxSixAllowed = selectPlayers.length >= 6;
     const balanceCheck = Coins - player_price >= 0;
-    const position = {
-        position: 'top-center'
-    }
     return (
         <div>
             <div className="p-6 border-1 border-gray-200 rounded-2xl space-y-5">
@@ -50,7 +47,7 @@ const Player = ({player, selectPlayers, handleChoosePlayer, handleCoinBalance, C
                         <p className="text-gray-400">Price:</p>
                         <p className="font-semibold text-gray-600 italic">${player_price}</p>
                     </div>
-                    <button onClick={() => alreadySelected ? toast.error('Already selected', position) : maxSixAllowed ? toast.error('No more than 6 players', position) : balanceCheck ? (handleChoosePlayer(player), handleCoinBalance(player), toast.success('Player added successfully!', position)) : toast.error('Not enough coins', position)} className="border-1 border-neutral-100 bg-neutral-100 hover:bg-gradient-to-r from-violet-600 to-indigo-600 hover:text-white px-2 py-1.5 rounded-lg"><a onClick={(e) => e.preventDefault()} href="#">Choose Player</a></button>
+                    <button onClick={() => alreadySelected ? toast.warn(`${player_name} Already selected`, {position:'top-center'}) : maxSixAllowed ? toast.warn('6 players max. Remove one to add more.', {position:'top-right'}) : balanceCheck ? (handleChoosePlayer(player), handleCoinBalance(player), toast.success(`${player_name} added successfully!`, {position:'top-center'})) : toast.error('Not enough coins. Claim free credit.', {position:'top-right'})} className="border-1 border-cyan-300 bg-cyan-300 hover:bg-gradient-to-r from-violet-600 to-indigo-600 hover:text-white px-2 py-1.5 rounded-lg"><a onClick={(e) => e.preventDefault()} href="#">Choose Player</a></button>
                 </div>
             </div>
         </div>

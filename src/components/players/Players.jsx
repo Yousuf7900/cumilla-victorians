@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Player from "../player/player";
+import Player from "../player/Player";
 import SelectedPlayer from "../selectedplayer/SelectedPlayer";
 import SelectedPlayers from "../selectedplayers/SelectedPlayers";
 
@@ -83,6 +83,7 @@ const Players = ({players,handleCoinBalance, Coins}) => {
                             <SelectedPlayers
                                 selectPlayers={selectPlayers}
                                 handleRemoveButton={handleRemoveButton}
+                                handleAvailableButton={handleAvailableButton}
                             ></SelectedPlayers>
                         }
                     </div>
