@@ -1,12 +1,28 @@
-# React + Vite
+Project Name: Cumilla Victorians Cricket Team
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React app that allows users to build their cricket team by selecting players within a coin budget. It features a responsive design.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features:
+- Banner with a claim free credit button to claim free coins.
+- Players list with "Available" and "Selected" tabs.
+- Player cards showing details like name, position, country, price, batting and bowling styles.
+- Ability to select up to 6 players within a coin budget.
+- Notifications for selection status using toast messages.
+- Newsletter subscription section.
+- Footer with about, quick links, and subscription form.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+
+git clone https://github.com/Yousuf900/cumilla-victorians.git
+
+2. Enter to the folder:
+cd cumilla-victorians
+
+3. install: 
+npm install
+
+4. run 
+npm run dev

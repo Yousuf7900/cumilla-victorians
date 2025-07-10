@@ -1,19 +1,21 @@
+
 import banner from '../../assets/images/banner-main.png'
 
 const Banner = ({handleFreeCredit}) => {
-    
-    return (
-        <div className='mt-28'>
-            <div className='mt-6'>
-                <div className='bg-[url(src/assets/images/bg-shadow.png)] bg-cover bg-gray-950 rounded-3xl p-16 text-center space-y-6'>
-                    <img className='mx-auto' src={banner} alt="Banner-img" />
-                    <h1 className='text-5xl font-bold text-white'>Assemble Your Ultimate Dream 11 Cricket Team</h1>
-                    <p className='text-2xl font-medium text-gray-400'>Beyond Boundaries Beyond Limits</p>
-                    <button onClick={() => {handleFreeCredit();}} className='bg-[#E7FE29] border-2 p-3.5 rounded-2xl outline-2 outline-[#E7FE29] outline-offset-4 font-bold'><a onClick={(e) => e.preventDefault()} href="#">Claim Free Credit</a></button>
-                </div>
-            </div>
+  return (
+    <div className='mt-28 mx-2'>
+      <div className='mt-6'>
+        <div className='bg-[url(src/assets/images/bg-shadow.png)] bg-cover bg-gray-950 rounded-3xl p-8 sm:p-12 md:p-16 text-center space-y-6'>
+          <img className='mx-auto max-w-full h-auto' src={banner} alt="Banner-img" />
+          <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold text-white'>Assemble Your Ultimate Dream 11 Cricket Team</h1>
+          <p className='text-lg sm:text-xl md:text-2xl font-medium text-gray-400'>Beyond Boundaries Beyond Limits</p>
+          <button onClick={() => {handleFreeCredit();}} className='bg-[#E7FE29] border-2 p-2.5 sm:p-3 md:p-3.5 rounded-2xl outline-2 outline-[#E7FE29] outline-offset-4 font-bold'>
+            <a onClick={(e) => e.preventDefault()} href="#">Claim Free Credit</a>
+          </button>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Banner;
